@@ -2,13 +2,13 @@ mod file;
 
 use serde::{ Serialize, Deserialize };
 
-#[derive(Clone, Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize)]
 struct NPC {
     name: String,
     position: Vec2,
 }
 
-#[derive(Clone, Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize)]
 struct Vec2 {
     x: f32,
     y: f32,
