@@ -59,11 +59,14 @@ fn main() {
     drop(map);
     drop(map_instance);
 
+    let start = Pos(0, 0);
+    let end = Pos(5, 5);
+
     let results = astar(
-        &Pos(0, 0),
+        &start,
         |p| p.successors(),
-        |p| p.distance(&Pos(5, 5)) / 3,
-        |p| *p == Pos(5, 5)
+        |p| p.distance(&end) / 3,
+        |p| *p == end
     );
 
     println!("{:?}", results);
