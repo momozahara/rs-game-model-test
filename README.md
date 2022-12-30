@@ -11,3 +11,9 @@ cargo run --example json
 ```bash
 cargo run --example lua
 ```
+
+### Pathfinding
+
+```bash
+cargo run --example pathfinding
+```
